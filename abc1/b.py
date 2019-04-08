@@ -1,0 +1,16 @@
+# coding: utf-8
+
+if __name__ == '__main__':
+    m = input()
+    if m < 100:
+        print '00'
+    elif m < 1000:
+        print '0' + str(m)[0]
+    elif m <= 5000:
+        print '{}'.format(m / 100).zfill(2)
+    elif m <= 30000:
+        print '{}'.format(m / 1000 + 50)
+    elif m <= 70000:
+        print '{}'.format((m / 1000 - 30) / 5 + 80)
+    else:
+        print '89'
