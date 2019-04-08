@@ -15,5 +15,4 @@ for i in `seq 0 $(($2-1))`
     touch $1/"${problem[i]}".py
     cat template.py >> $1/"${problem[i]}".py
   done
-atom $1
 
