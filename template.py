@@ -4,7 +4,6 @@ import bisect
 from datetime import datetime as dt
 import bisect
 import math
-input = sys.stdin.readline
 
 def gcd(a, b):
     return math.gcd(a, b)

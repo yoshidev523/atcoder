@@ -1,23 +1,17 @@
 # coding: utf-8
 import re
-from datetime import datetime as dt
-if __name__ == '__main__':
-    x, y = map(int, raw_input().split())
-    print y/x
-# coding: utf-8
-import re
 import bisect
 from datetime import datetime as dt
 import bisect
 import math
-import sys
-input = sys.stdin.readline
 
 def gcd(a, b):
     return math.gcd(a, b)
 
 def lcm(a, b):
     return a * b / gcd(a, b)
+
+
 
 class slist(list):
     def __init__(self, *args, **kw):
@@ -32,4 +26,5 @@ class slist(list):
 
 
 if __name__ == '__main__':
-    
+    s = input()
+    print(s + 'pp')

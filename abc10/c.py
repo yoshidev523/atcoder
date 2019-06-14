@@ -1,17 +1,9 @@
 # coding: utf-8
 import re
-from datetime import datetime as dt
-if __name__ == '__main__':
-    x, y = map(int, raw_input().split())
-    print y/x
-# coding: utf-8
-import re
 import bisect
 from datetime import datetime as dt
 import bisect
 import math
-import sys
-input = sys.stdin.readline
 
 def gcd(a, b):
     return math.gcd(a, b)
@@ -30,6 +22,16 @@ class slist(list):
     def index_left(self, value):
         return bisect.bisect_left(self, value)
 
-
 if __name__ == '__main__':
-    
+    sx, sy, ex, ey, t, v = map(int, input().split())
+    n = int(input())
+    arr = [None] * n
+    for i in range(n):
+        arr[i] = list(map(int, input().split()))
+
+    for a in arr:
+        dist = float((sx-a[0])**2 + (sy-a[1])**2)**0.5 + float((ex-a[0])**2 + (ey-a[1])**2)**0.5
+        if dist <= float(t*v):
+            print('YES')
+            exit()
+    print('NO')
