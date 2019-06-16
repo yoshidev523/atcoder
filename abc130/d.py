@@ -15,10 +15,7 @@ if __name__ == '__main__':
     ans = 0
     for idx, a in enumerate(A):
         target = sum[idx] + K
-        # print(sum[idx:N+1])
-        # print(target)
         i = bisect.bisect_left(sum, target)
-        # print(i)
         ans+=N-i+1
 
     print(ans)
